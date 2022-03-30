@@ -1,0 +1,199 @@
+:root {
+  --header-color: #ffffff;
+  --first-title-color: #ffffff;
+  --second-title-color: #303030;
+  --first-btn-color: #ffffff;
+  --second-btn-color: #303030;
+  --accent-color: #ff6c00;
+  --hero-link-color: #303030;
+  --first-pre-title-color: rgba(157, 164, 189, 0.6);
+  --hero-text-color: #9da4bd;
+  --first-text-color: #303030;
+  --second-text-color: #555555;
+  --first-background-color: #ffffff;
+  --second-background-color: #f7f7f7;
+  --prices-text-color: #9da4bd;
+  --prices-button-color: #ffffff;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/*Header*/
+
+.header {
+  background-color: teal;
+  /* поміняти на картинку */
+}
+
+.header-link,
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--header-color);
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-btn {
+  color: var(--first-btn-color);
+}
+
+/*Hero*/
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--hero-link-color);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
+}
+
+.hero-content {
+  background-color: var(--first-text-color);
+}
+
+.hero-pre-title {
+  color: var(--first-pre-title-color);
+}
+
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--first-title-color);
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--hero-text-color);
+}
+
+/*About */
+
+.about-pre-title {
+  color: var(--first-text-color);
+}
+
+.about-title {
+  color: var(--second-title-color);
+}
+
+.about-text {
+  color: var(--second-text-color);
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+}
+
+.about-btn {
+  color: var(--second-btn-color);
+}
+
+/*Prices*/
+
+.prices {
+  background-color: #303030;
+  /* поміняти на картинку */
+}
+.prices-pre-title {
+  color: var(--first-pre-title-color);
+}
+
+.prices-title {
+  color: var(--first-title-color);
+}
+
+.prices-item-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--prices-text-color);
+}
+
+.prices-btn {
+  color: var(--prices-button-color);
+}
+
+/*Reasons*/
+
+.reasons-item-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--first-text-color);
+}
+
+.reasons-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--first-text-color);
+}
+
+.reasons-pre-title {
+  color: var(--first-text-color);
+}
+.reasons-title {
+  color: var(--first-text-color);
+}
+.reasons-text {
+  color: var(--second-text-color);
+}

@@ -1,19 +1,24 @@
 :root {
   --header-color: #ffffff;
-  --first-title-color: #ffffff;
-  --second-title-color: #303030;
-  --first-btn-color: #ffffff;
-  --second-btn-color: #303030;
+  --primary-pre-title-color: rgba(157, 164, 189, 0.6);
+  --secondary-pre-title-color: #303030;
+  --primary-title-color: #ffffff;
+  --secondary-title-color: #303030;
+  --primary-after-title-color: #9da4bd;
+  --secondary-after-title-color: #555555;
+  --primary-btn-color: #ffffff;
+  --secondary-btn-color: #303030;
   --accent-color: #ff6c00;
   --hero-link-color: #303030;
-  --first-pre-title-color: rgba(157, 164, 189, 0.6);
-  --hero-text-color: #9da4bd;
-  --first-text-color: #303030;
-  --second-text-color: #555555;
-  --first-background-color: #ffffff;
-  --second-background-color: #f7f7f7;
+  --primary-text-color: #303030;
+  --secondary-text-color: #555555;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f7f7f7;
   --prices-text-color: #9da4bd;
-  --prices-button-color: #ffffff;
+  --online-background-color: #191c26;
+  --contacts-text-color: #9da4bd;
+  --copyright-color: #9da4bd;
+  --footer-link-color: #303030;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -25,6 +30,19 @@ body {
 
 .link {
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .pre-title {
@@ -51,13 +69,13 @@ body {
   text-transform: uppercase;
 }
 
-.text {
+.after-title {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
 
-/*Header*/
+/* Header */
 
 .header {
   background-color: teal;
@@ -78,10 +96,10 @@ body {
 }
 
 .header-btn {
-  color: var(--first-btn-color);
+  color: var(--primary-btn-color);
 }
 
-/*Hero*/
+/* Hero */
 
 .hero-link {
   font-weight: 600;
@@ -97,11 +115,12 @@ body {
 }
 
 .hero-content {
-  background-color: var(--first-text-color);
+  background-color: black;
+  /* поміняти на картинку */
 }
 
 .hero-pre-title {
-  color: var(--first-pre-title-color);
+  color: var(--primary-pre-title-color);
 }
 
 .hero-title {
@@ -109,53 +128,53 @@ body {
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
-  color: var(--first-title-color);
+  color: var(--primary-title-color);
 }
 
-.hero-text {
+.hero-after-title {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
-  color: var(--hero-text-color);
+  color: var(--primary-after-title-color);
 }
 
-/*About */
+/* About */
 
 .about-pre-title {
-  color: var(--first-text-color);
+  color: var(--secondary-pre-title-color);
 }
 
 .about-title {
-  color: var(--second-title-color);
+  color: var(--secondary-title-color);
 }
 
-.about-text {
-  color: var(--second-text-color);
+.about-after-title {
+  color: var(--secondary-pre-title-color: );
 }
 
 .about-text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
-  color: var(--second-text-color);
+  color: var(--secondary-text-color);
 }
 
 .about-btn {
-  color: var(--second-btn-color);
+  color: var(--secondary-btn-color);
 }
 
-/*Prices*/
+/* Prices */
 
 .prices {
-  background-color: #303030;
+  background-color: black;
   /* поміняти на картинку */
 }
 .prices-pre-title {
-  color: var(--first-pre-title-color);
+  color: var(--primary-pre-title-color);
 }
 
 .prices-title {
-  color: var(--first-title-color);
+  color: var(--primary-title-color);
 }
 
 .prices-item-text {
@@ -166,10 +185,10 @@ body {
 }
 
 .prices-btn {
-  color: var(--prices-button-color);
+  color: var(--primary-btn-color);
 }
 
-/*Reasons*/
+/* Reasons */
 
 .reasons-item-count {
   font-weight: 700;
@@ -177,7 +196,7 @@ body {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.05em;
-  color: var(--first-text-color);
+  color: var(--primary-text-color);
 }
 
 .reasons-item-text {
@@ -185,16 +204,112 @@ body {
   font-size: 11px;
   line-height: 1.36;
   text-align: center;
-  color: var(--first-text-color);
+  color: var(--primary-text-color);
 }
 
 .reasons-pre-title {
-  color: var(--first-text-color);
+  color: var(--secondary-pre-title-color);
 }
 .reasons-title {
-  color: var(--first-text-color);
+  color: var(--secondary-title-color);
 }
-.reasons-text {
-  color: var(--second-text-color);
+.reasons-after-title {
+  color: var(--secondary-after-title-color);
 }
 /* Masters */
+.masters-pre-title {
+  color: var(--secondary-pre-title-color);
+}
+
+.masters-title {
+  color: var(--secondary-title-color);
+}
+
+.masters-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.masters-item-text {
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--accent-color);
+}
+
+/* Gallery */
+
+.gallery-pre-title {
+  color: var(--secondary-pre-title-color);
+}
+
+/* Online */
+
+.online {
+  background-color: var(--online-background-color);
+}
+
+.online-title {
+  color: var(--primary-title-color);
+}
+
+/* Contacts */
+
+.contacts {
+  background-color: black;
+  /* поміняти на картинку */
+}
+
+.contacts-title {
+  color: var(--primary-title-color);
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--contacts-text-color);
+}
+
+.contacts-time-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+
+.contacts-time-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--contacts-text-color);
+}
+
+/* Footer */
+
+.footer-copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--copyright-color);
+}
+
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--footer-link-color);
+}

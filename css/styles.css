@@ -19,7 +19,28 @@
   --contacts-text-color: #9da4bd;
   --copyright-color: #9da4bd;
   --footer-link-color: #303030;
+  --typical-gap: 20px;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  padding: 0;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -82,6 +103,14 @@ body {
   /* поміняти на картинку */
 }
 
+.header .container {
+  display: flex;
+}
+
+.header-list {
+  display: flex;
+}
+
 .header-link,
 .header-tel {
   font-weight: 600;
@@ -100,7 +129,9 @@ body {
 }
 
 /* Hero */
-
+.hero-list {
+  padding: 0px;
+}
 .hero-link {
   font-weight: 600;
   font-size: 11px;

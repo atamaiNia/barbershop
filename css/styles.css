@@ -37,6 +37,10 @@ ul {
   padding-left: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+
 button {
   padding: 0;
 }
@@ -95,6 +99,18 @@ body {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  cursor: pointer;
+  height: 40px;
+  min-width: 160px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
+  transition: background-color 300ms linear, color 300ms linear;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-btn-color);
 }
 
 .after-title {
@@ -109,6 +125,8 @@ body {
   background-color: teal;
   padding-top: 32px;
   padding-bottom: 32px;
+  position: absolute;
+  width: 100%;
   /* поміняти на картинку */
 }
 
@@ -124,6 +142,10 @@ body {
   display: flex;
 }
 
+.header-item + .header-item {
+  margin-left: 40px;
+}
+njghjmgh,mcbn
 .header-link,
 .header-tel {
   font-weight: 600;
@@ -132,13 +154,28 @@ body {
   letter-spacing: 0.1em;
   color: var(--header-color);
 }
+
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
 
+.header-connect {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-tel {
+  margin-right: 40px;
+}
+
 .header-btn {
+  background-color: transparent;
   color: var(--primary-btn-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  padding: 12px 20px;
 }
 
 /* Hero */
